@@ -88,7 +88,7 @@ Finally, the block method above is then available inside the block template file
 
 ## Diagnostic Reports
 
-You can customize diagnostic reports in PluginDx however you like to fit your requirements. When creating a new Magento 2 integration, you'll have access to all of Magento 2's core configuration settings and server information provided by `phpinfo()`. If you have settings unique to your extension, you can add them using the JSON editor inside PluginDx.
+You can customize diagnostic reports in PluginDx however you'd like. When creating a new Magento 2 integration, you'll have access to all of Magento 2's core configuration settings and server information provided by `phpinfo()`. If you have settings unique to your extension, you can add them using the JSON editor inside PluginDx.
 
 ## Config
 
