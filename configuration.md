@@ -25,7 +25,7 @@ This key is automatically generated after creating a new integration and will pe
 
 | Name | Type | Default | Description |
 |------------------|----------|---------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| color | String | 'green' | Primary color of the embed panel, mainly used for button and link styling. Supports any CSS color value including keywords and hex values. [Learn more.](#) |
+| color | String | '#0275d8' | Primary color of the embed panel, mainly used for button and link styling. Supports any CSS color value including keywords and hex values. [Learn more.](/styling.html) |
 | email | String | '' | Email address shown as a fallback if an error is encountered or PluginDx is unavailable. [Learn more.](#fallback) |
 | key | String | '' | Your public integration key for PluginDx. |
 | label | String | 'Support' | Label of the support button shown to toggle the PluginDx embed panel if `type` is 'button'. |
@@ -36,7 +36,7 @@ This key is automatically generated after creating a new integration and will pe
 | platform | String | 'other' | The platform of your integration. Used for platform-specific behavior and styling. |
 | report | String | '' | Dynamic report URL used to generate diagnostic reports in the platform-specific PluginDx framework. |
 | target | String | '' | Custom CSS selector to open the PluginDx embed panel from a specific DOM element rather than a support button if `type` is 'custom-target'. |
-| translations | Object | {} | Re-label or translate text inside the PluginDx embed panel. [Learn more.](#) |
+| translations | Object | {} | Re-label or translate text inside the PluginDx embed panel. [Learn more.](#translation-attributes) |
 | type | String | 'button' | Type of embed element to toggle the PluginDx embed panel. Options include 'button', 'circle-overlay', and 'custom-target'. |
 
 ## Translation Attributes
@@ -133,3 +133,9 @@ error: {
     }
 }
 ```
+
+## Fallback
+
+If an error is encountered when loading the PluginDx embed panel or sending a message, your users should still be able to contact you directly in your plugin. For this reason it's **strongly recommended** that you provide your support email address via the `email` attribute.
+
+Additionally, if you decide to opt out of PluginDx in the future, your users will still be able to contact you directly even if they're using an older version of your plugin with PluginDx included.
