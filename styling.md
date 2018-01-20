@@ -16,4 +16,4 @@ After installing the panel in your plugin, open the panel locally and use Chrome
 }
 ```
 
-If needed, use the `!important` declaration as hard override of select CSS properties if needed.
+If needed, use the `!important` declaration to hard override select CSS properties when needed.
