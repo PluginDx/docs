@@ -13,7 +13,7 @@
 
 ## Embed Panel
 
-* Customization
-* [JavaScript API](methods.md)
-* [CSS & Styling](css-style-customization.md)
+* [Configuration](configuration.md)
+* [JavaScript API](javascript-api.md)
+* [CSS & Styling](styling.md)
 
