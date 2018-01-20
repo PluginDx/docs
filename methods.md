@@ -1,30 +1,27 @@
-# Defining Methods
+# JavaScript API
 
-Methods allow you to smoothly display code examples in different languages.
+The PluginDx JavaScript API exposes the following methods to the global object `PDX.panel`. You can use these methods to control the embed panel programmatically.
 
-{% method %}
-## My first method
+## .init()
 
-My first method exposes how to print a message in JavaScript and Go.
-
-{% sample lang="js" %}
-Here is how to print a message to `stdout` using JavaScript.
-
-```js
-console.log('My first method');
+```javascript
+PDX.panel.init(handler);
 ```
 
-{% sample lang="go" %}
-Here is how to print a message to `stdout` using Go.
+## .open()
 
-```go
-fmt.Println("My first method")
+```javascript
+PDX.panel.open();
 ```
 
-{% common %}
-Whatever language you are using, the result will be the same.
+## .close()
 
-```bash
-$ My first method
+```javascript
+PDX.panel.close();
 ```
-{% endmethod %}
+
+## .toggle()
+
+```javascript
+PDX.panel.toggle();
+```

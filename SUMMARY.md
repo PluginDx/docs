@@ -2,8 +2,18 @@
 
 ## Overview
 
-* [My Awesome API](README.md)
+* [Getting Started](README.md)
 
-## Methods
+## Integrations
 
-* [Defining Methods](methods.md)
+* Magento 1
+* Magento 2
+* WordPress
+* WooCommerce
+
+## Embed Panel
+
+* Customization
+* [JavaScript API](methods.md)
+* [CSS & Styling](css-style-customization.md)
+
