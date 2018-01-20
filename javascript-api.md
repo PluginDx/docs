@@ -8,11 +8,15 @@ The PluginDx JavaScript API exposes the following methods to the global object `
 PDX.panel.init(handler);
 ```
 
+For integrations built as single-page applications (SPA) within a platform, you may wish to initialize the PluginDx embed panel programmatically in a specific view or route. Make sure you set `autoInit` to `false` in your embed panel configuration. After the PluginDx `panel.js` script has been loaded, use the method above.
+
 ## .open\(\)
 
 ```javascript
 PDX.panel.open();
 ```
+
+Opens the PluginDx embed panel if it's closed, otherwise nothing happens. Returns the embed panel component object.
 
 ### Example
 
@@ -43,6 +47,8 @@ $('#plugindx-open').click(function() {
 PDX.panel.close();
 ```
 
+Closes the PluginDx embed panel if it's open, otherwise nothing happens. Returns the embed panel component object.
+
 ### Example
 
 <button id="plugindx-close">Close Panel</button>
@@ -71,6 +77,8 @@ $('#plugindx-close').click(function() {
 ```javascript
 PDX.panel.toggle();
 ```
+
+Toggles the PluginDx embed panel (open / close). Returns the embed panel component object.
 
 ### Example
 
