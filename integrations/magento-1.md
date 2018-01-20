@@ -74,7 +74,7 @@ You can customize diagnostic reports in PluginDx however you'd like. When creati
 
 ## Config
 
-Store Magento 1 core and extension-specific configuration fields in the `config` array. To add a new custom field, provide a `name` and `path` attribute inside a new object:
+Provide Magento 1 core and extension-specific configuration fields in the `config` array. To add a new custom field, provide a `name` and `path` attribute inside a new object:
 
 ```javascript
 "config": [
