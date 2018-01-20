@@ -10,7 +10,7 @@ If you run into any technical issues, [send an email](https://plugindx.com/conta
 
 ## Overview
 
-PluginDx goes directly inside your extension. Here's a high-level view of the framework:
+PluginDx goes directly inside your Magento 2 extension. Here's a high-level view of the framework:
 
 #### Model/Plugindx/Report.php
 
