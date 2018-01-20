@@ -7,7 +7,7 @@
 ## Integrations
 
 * Magento 1
-* Magento 2
+* [Magento 2](integrations/magento-2.md)
 * WordPress
 * WooCommerce
 
