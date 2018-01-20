@@ -189,5 +189,5 @@ If you need access to Magento 2 logs inside `/var/log`, use the `logs` attribute
 ]
 ```
 
-You can tail `system.log`, `exception.log`, or custom logs created by your extension. Specify the `lines` attribute to tail a specific number of lines. By default, PluginDx will tail 100 lines.
+You can tail `system.log`, `exception.log`, or custom logs created by your extension. The `path` attribute supports [glob](http://php.net/manual/en/function.glob.php) patterns. Specify the `lines` attribute to tail a specific number of lines. By default, PluginDx will tail 100 lines.
 
