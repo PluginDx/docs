@@ -46,6 +46,7 @@ This key is automatically generated after creating a new integration and will pe
 
 | Name | Type | Default | Description |
 |------------------|----------|---------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| autoInit | Boolean | true | Automatically initialize and mount the PluginDx embed panel. If set to `false`, requires the `init` method to [initialize programmatically](/javascript-api.html).
 | color | String | '#0275d8' | Primary color of the embed panel, mainly used for button and link styling. Supports any CSS color value including keywords and hex values. [Learn more.](/styling.html) |
 | email | String | '' | Email address shown as a fallback if an error is encountered or PluginDx is unavailable. [Learn more.](#fallback) |
 | key | String | '' | Your public integration key for PluginDx. |
