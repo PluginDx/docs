@@ -126,7 +126,7 @@ message: {
 }
 ```
 
-### Message Sent
+### Message Sent View
 
 ```javascript
 messageSent: {
@@ -139,7 +139,7 @@ messageSent: {
 }
 ```
 
-### Error
+### Error View
 
 ```javascript
 error: {
