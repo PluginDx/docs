@@ -11,6 +11,27 @@ After creating a new integration in PluginDx, you'll be asked to include an embe
 <div class="plugindx" data-label="Support" data-key="YOUR INTEGRATION KEY" data-platform="YOUR PLATFORM" data-report="REPORT AJAX URL"></div>
 ```
 
+For more advanced customization such as [translations](#translation-attributes) and custom targets, you may prefer using a JavaScript object:
+
+```html
+<script>
+    var pdxConfig = {
+        label: 'Support',
+        key: 'YOUR INTEGRATION KEY',
+        platform: 'YOUR PLATFORM',
+        report: 'REPORT AJAX URL',
+        type: 'custom-target',
+        target: '.plugindx',
+        translations: {
+            message: {
+                title: 'Contact Us'
+            }
+        }
+    };
+</script>
+<script async src="https://cdn.plugindx.com/embed/v1/panel.js"></script>
+```
+
 ### Integration Key
 
 Your **public** integration `key` is unique to your integration and used for several things:
