@@ -8,7 +8,7 @@ The PluginDx JavaScript API exposes the following methods to the global object `
 PDX.panel.init(handler);
 ```
 
-For integrations built as single-page applications (SPA) within a platform, you may wish to initialize the PluginDx embed panel programmatically in a specific view or route. Make sure you set `autoInit` to `false` in your embed panel configuration. After the PluginDx `panel.js` script has been loaded, use the method above.
+For integrations built as single-page applications (SPA) within a platform, you may wish to initialize the PluginDx embed panel programmatically in a specific view or route. Make sure you set `autoInit` to `false` in your embed panel [configuration](/configuration.html). After the PluginDx `panel.js` script has been loaded, use the method above.
 
 ## .open\(\)
 
