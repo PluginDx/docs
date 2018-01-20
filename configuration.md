@@ -21,25 +21,22 @@ Your **public** integration `key` is unique to your integration and used for sev
 
 This key is automatically generated after creating a new integration and will persist indefinitely to ensure all of your users can use PluginDx.
 
-### Report
-
-The `report` attribute allows you to specify a dynamic URL for generating diagnostic reports based on your platform.
-
 ## Attributes
 
 | Name | Type | Default | Description |
 |------------------|----------|---------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| color | String | 'green' | Primary color of the embed panel, mainly used for button and link styling. Supports any CSS color value including keywords and hex values. [Learn more.](#) |
 | email | String | '' | Email address shown as a fallback if an error is encountered or PluginDx is unavailable. [Learn more.](#fallback) |
+| key | String | '' | Your public integration key for PluginDx. |
 | label | String | 'Support' | Label of the support button shown to toggle the PluginDx embed panel if `type` is 'button'. |
-| platform | String | 'other' | The platform of your integration. Used for platform-specific behavior and styling. |
-| color | String | 'green' | Primary color of the embed panel, mainly used for button and link styling. Supports any CSS color value including keywords and hex values. [Learn more about styling.](#) |
-| report | String | '' | Dynamic report URL used to generate diagnostic reports in the platform-specific PluginDx framework. |
-| target | String | '' | Custom CSS selector to open the PluginDx embed panel from a specific DOM element rather than a support button if `type` is 'custom-target'. |
 | messageFields | Array | ['name', 'email', 'subject', 'message', 'secure', 'screenshots', 'diagnostics'] | Fields shown in the message form. Default value includes all available fields. Email and message fields are required and always shown to the user. |
+| onReady | Function | () => {} | Execute custom JavaScript code after the PluginDx embed panel is initialized and fully rendered. |
 | overlayIcon | String | 'question-mark' | Icon shown in a circle overlay button if `type` is 'circle-overlay'. Icons include 'question-mark', 'email', and 'livesaver'. |
 | overlayPlacement | String | 'bottom-right' | Placement of a circle overlay button if `type` is 'circle-overlay'. Options include 'bottom-right', 'bottom-left', 'top-left', and 'top-right'. |
-| onReady | Function | () => {} | Execute custom JavaScript code after the PluginDx embed panel is initialized and fully rendered. |
-| translations | Object | {} | Re-label or translate text inside the PluginDx embed panel. [Learn more about translations.](#) |
+| platform | String | 'other' | The platform of your integration. Used for platform-specific behavior and styling. |
+| report | String | '' | Dynamic report URL used to generate diagnostic reports in the platform-specific PluginDx framework. |
+| target | String | '' | Custom CSS selector to open the PluginDx embed panel from a specific DOM element rather than a support button if `type` is 'custom-target'. |
+| translations | Object | {} | Re-label or translate text inside the PluginDx embed panel. [Learn more.](#) |
 | type | String | 'button' | Type of embed element to toggle the PluginDx embed panel. Options include 'button', 'circle-overlay', and 'custom-target'. |
 
 ## Translation Attributes
@@ -70,69 +67,69 @@ translations: {
 ### Message View
 
 ```javascript
+message: {
+    title: 'New Message',
+    fields: {
+        name: {
+            placeholder: 'Your Name'
+        },
+        email: {
+            placeholder: 'Your Email',
+            error: 'Please enter a valid email address.'
+        },
+        subject: {
+            placeholder: 'Subject'
+        },
         message: {
-          title: 'New Message',
-          fields: {
-            name: {
-              placeholder: 'Your Name'
-            },
-            email: {
-              placeholder: 'Your Email',
-              error: 'Please enter a valid email address.'
-            },
-            subject: {
-              placeholder: 'Subject'
-            },
-            message: {
-              placeholder: 'How can we help you?',
-              error: 'Please enter a message.'
-            },
-            secure: {
-              placeholder: 'What are your admin credentials?',
-              help: 'Your data is securely stored with AES-256 encryption and destroyed once we resolve your issue.'
-            },
-            screenshots: {
-              placeholder: 'Drop screenshots here or click to upload'
-            },
-            diagnostics: {
-              placeholder: 'Site Diagnostics',
-              help: 'Send your site configuration data directly to us for expedited support.'
-            }
-          },
-          action: {
-            label: 'Send Message',
-            loadingLabel: 'Sending Message...',
-            diagnosticLabel: 'Preparing Store Diagnostics...',
-            error: `Unable to send message. Email us directly at ${this.supportEmail}`
-          }
+            placeholder: 'How can we help you?',
+            error: 'Please enter a message.'
+        },
+        secure: {
+            placeholder: 'What are your admin credentials?',
+            help: 'Your data is securely stored with AES-256 encryption and destroyed once we resolve your issue.'
+        },
+        screenshots: {
+            placeholder: 'Drop screenshots here or click to upload'
+        },
+        diagnostics: {
+            placeholder: 'Site Diagnostics',
+            help: 'Send your site configuration data directly to us for expedited support.'
         }
+    },
+    action: {
+        label: 'Send Message',
+        loadingLabel: 'Sending Message...',
+        diagnosticLabel: 'Preparing Store Diagnostics...',
+        error: `Unable to send message. Email us directly at ${this.supportEmail}`
+    }
+}
 ```
 
 ### Message Sent
 
 ```javascript
-        messageSent: {
-          title: 'Message Sent',
-          header: 'Message Sent',
-          body: `We'll be in touch shortly.`,
-          action: {
-            label: 'Close Panel'
-          }
-        }
+messageSent: {
+    title: 'Message Sent',
+    header: 'Message Sent',
+    body: `We'll be in touch shortly.`,
+    action: {
+        label: 'Close Panel'
+    }
+}
 ```
 
 ### Error
 
 ```javascript
-        error: {
-          title: 'Error',
-          notFound: {
-            header: '404',
-            body: `Sorry, we couldn't find this resource. Please try refreshing or contact us directly at`
-          },
-          other: {
-            header: 'Oops!',
-            body: `We're sorry, it looks like something went wrong. If you have a question please contact us directly at`
-          }
-        }
+error: {
+    title: 'Error',
+    notFound: {
+        header: '404',
+        body: `Sorry, we couldn't find this resource. Please try refreshing or contact us directly at`
+    },
+    other: {
+        header: 'Oops!',
+        body: `We're sorry, it looks like something went wrong. If you have a question please contact us directly at`
+    }
+}
 ```
