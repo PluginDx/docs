@@ -25,7 +25,7 @@ To learn more about the PluginDx framework, select your platform:
 - [WordPress](/integrations/wordpress.html)
 - [WooCommerce](/integrations/woocommerce.html)
 
-More platforms are on the way. If you have any suggestions, feel free to [contact](https://plugindx.com/contact).
+More platforms are on the way. If you have any suggestions, feel free to [get in touch](https://plugindx.com/contact).
 
 ## Embed Panel
 
