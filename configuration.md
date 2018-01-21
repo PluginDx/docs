@@ -11,7 +11,7 @@ After creating a new integration in PluginDx, you'll be asked to include an embe
 <div class="plugindx" data-label="Support" data-key="YOUR INTEGRATION KEY" data-platform="YOUR PLATFORM" data-report="REPORT AJAX URL"></div>
 ```
 
-For more advanced customization such as [translations](#translation-attributes) and custom targets, you may prefer using a JavaScript object:
+For more advanced customization such as [translations](#translation-attributes) and custom targets, you can use a JavaScript object:
 
 ```html
 <script>
