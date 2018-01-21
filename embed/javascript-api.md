@@ -2,6 +2,8 @@
 
 The PluginDx JavaScript API exposes the following methods to the global object `PDX.panel`. You can use these methods to control the embed panel programmatically.
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 ## .init\(\)
 
 ```javascript
