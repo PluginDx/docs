@@ -103,5 +103,6 @@ $('#plugindx-toggle').click(function() {
 });
 ```
 
-
+<script async src="https://cdn.plugindx.com/embed/v1/panel.js"></script>
+<div class="plugindx" data-key="019e4df072af5813b2c3e235" data-email="support@plugindx.com" data-platform="wordpress" data-type="circle-overlay" data-color="#007bff" data-message-fields="['name', 'email', 'subject', 'message', 'screenshots']"></div>
 
