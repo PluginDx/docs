@@ -1,6 +1,6 @@
 # PluginDx for Magento 1
 
-If you build extensions or themes for Magento 1, PluginDx is like an Apache helicopter for your technical support squadron. To get started, **[sign up for PluginDx](https://app.plugindx.com/register)** and create a new integration. Select "Magento 1" as your platform. From there, you'll be given specific instructions on how to add the PluginDx framework to your extension.
+If you build extensions or themes for Magento 1, PluginDx is like a Swiss Army knife for your technical support toolkit. To get started, **[sign up for PluginDx](https://app.plugindx.com/register)** and create a new integration. Select "Magento 1" as your platform. From there, you'll be given specific instructions on how to add the PluginDx framework to your extension.
 
 Copy and paste the framework code using the setup guide inside the PluginDx app. Afterwards, reference this guide for more information. Platform frameworks are completely open source:
 

@@ -1,6 +1,6 @@
 # PluginDx for WooCommerce
 
-If you build plugins or themes for WooCommerce, PluginDx is like a katana for your technical support ninjas. To get started, **[sign up for PluginDx](https://app.plugindx.com/register)** and create a new integration. Select "WooCommerce" as your platform. From there, you'll be given specific instructions on how to add the PluginDx framework to your plugin.
+If you build plugins or themes for WooCommerce, PluginDx is like a Swiss Army knife for your technical support toolkit. To get started, **[sign up for PluginDx](https://app.plugindx.com/register)** and create a new integration. Select "WooCommerce" as your platform. From there, you'll be given specific instructions on how to add the PluginDx framework to your plugin.
 
 Copy and paste the framework code using the setup guide inside the PluginDx app. Afterwards, reference this guide for more information. Platform frameworks are completely open source:
 
