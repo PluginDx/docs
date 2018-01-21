@@ -38,5 +38,5 @@ The PDX embed panel is an HTML / JavaScript snippet that goes inside a template 
 
 This panel allows your customers to voluntarily send you a message and submit a diagnostic report where your plugin lives &mdash; in the platform's admin panel. Once a message is sent, it will arrive in your help desk. You'll click a button inside the email to view the underlying diagnostic report which is hosted on PluginDx.
 
-To learn more about the PluginDx embed panel, check out the [configuration guide](/configuration.html).
+To learn more about the PluginDx embed panel, check out the [configuration guide](/embed/configuration.html).
 

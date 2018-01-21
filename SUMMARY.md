@@ -13,7 +13,7 @@
 
 ## Embed Panel
 
-* [Configuration](configuration.md)
-* [JavaScript API](javascript-api.md)
-* [CSS & Styling](styling.md)
+* [Configuration](embed/configuration.md)
+* [JavaScript API](embed/javascript-api.md)
+* [CSS & Styling](embed/styling.md)
 
