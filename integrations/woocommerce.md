@@ -71,12 +71,35 @@ You can customize diagnostic reports in PluginDx however you'd like. When creati
 Provide WooCommerce core and plugin-specific configuration fields in the `config` array. To add a new custom field, provide a `name` and `path` attribute inside a new object:
 
 ```javascript
-
+"config": [
+    {
+      "name": "Country / State",
+      "path": "woocommerce_default_country"
+    }
+]
 ```
 
 Inside the JSON editor you'll also have access to autocomplete for Woo's core configuration settings. Simply press the `CTRL` key and begin typing.
 
 ## Collections
+
+You can use the `collections` array to pull down data directly from your customer's database and display it in a table grid inside PluginDx:
+
+```javascript
+"collections": [
+  {
+    "model": "tax_rates",
+    "attributes": [
+      "tax_rate_country",
+      "tax_rate_state",
+      "tax_rate",
+      "tax_rate_name",
+      "tax_rate_shipping",
+      "tax_rate_class"
+    ]
+  }
+]
+```
 
 ## Helpers
 
