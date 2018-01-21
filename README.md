@@ -20,8 +20,8 @@ It should take less than 30 minutes to implement this framework in your plugin. 
 
 To learn more about the PluginDx framework, select your platform:
 
-- [Magento 1](/integrations/magento1.html)
-- [Magento 2](/integrations/magento2.html)
+- [Magento 1](/integrations/magento-1.html)
+- [Magento 2](/integrations/magento-2.html)
 - [WordPress](/integrations/wordpress.html)
 - [WooCommerce](/integrations/woocommerce.html)
 
