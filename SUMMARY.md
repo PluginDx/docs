@@ -2,7 +2,7 @@
 
 ## Overview
 
-* [Getting Started](README.md)
+* [Welcome](README.md)
 
 ## Integrations
 
