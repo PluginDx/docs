@@ -1,6 +1,9 @@
 {
-    "plugins": [ "theme-api" ],
+    "plugins": [ "theme-api", "ga" ],
     "pluginsConfig": {
+        "ga": {
+            "token": "UA-44969606-4"
+        },
         "theme-api": {
             "languages": [
                 {
